@@ -1,0 +1,29 @@
+{
+  "name": "gemini-cli-github-action-test",
+  "version": "1.0.0",
+  "description": "ボット機能テスト用のTypeScriptプロジェクト",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "ts-node src/main.ts",
+    "clean": "rimraf dist",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "test",
+    "bot"
+  ],
+  "author": "Test User",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "rimraf": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
